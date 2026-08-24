@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bigotacos | Tacos y Burritos Callejeros — Tacos a $20, El Sabor con Bigote</title>
+  <meta name="description" content="Bigotacos: tacos de suadero, longaniza, arrachera, chorizo argentino, alambre y carne enchilada a $20, burritos a $40. Ingredientes frescos y sabor 100% mexicano. Abierto de lunes a sábado de 7am a 3pm. ¡Ordena por WhatsApp!">
+  <meta name="keywords" content="bigotacos, tacos economicos, tacos de suadero, tacos de longaniza, burritos, comida callejera mexicana, tacos a 20 pesos, el sabor con bigote">
+  <meta name="author" content="Bigotacos">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bigotacos | El Sabor con Bigote — Tacos a $20">
+  <meta property="og:description" content="Tacos de suadero, longaniza, arrachera, chorizo argentino, alambre y carne enchilada a $20. Burritos a $40. Ingredientes frescos, mucho sabor, poco precio.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="assets/img/bigotacos-puesto.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="apple-touch-icon" href="assets/img/logo.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <img src="assets/img/logo.svg" alt="" class="loader-logo">
+    </div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Bigotacos — Inicio">
+        <img src="assets/img/logo.svg" alt="Bigotacos" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Bigotacos</span>
+          <span class="brand-tagline">El sabor con bigote</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#menu" class="nav-link">Menú</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/525612657484?text=Hola%20Bigotacos%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="btn btn-primary btn-nav">Ordena por WhatsApp</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>Bigotacos — Tacos y Burritos Callejeros</p>
+
+        <h1 class="hero-title reveal" data-reveal>
+          El sabor<br>
+          <span class="gradient-text">con bigote.</span>
+        </h1>
+
+        <p class="hero-typewriter reveal" data-reveal>
+          Especialistas en <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal" data-reveal>
+          Tacos y burritos preparados con ingredientes frescos y mucho sabor, todos los días. Suadero, longaniza, arrachera, chorizo argentino, alambre y carne enchilada a $20 — porque el buen sabor no debería costar caro.
+        </p>
+
+        <div class="hero-cta reveal" data-reveal>
+          <a href="https://wa.me/525612657484?text=Hola%20Bigotacos%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            Ordena por WhatsApp
+          </a>
+          <a href="#menu" class="btn btn-outline btn-lg">Ver el Menú</a>
+        </div>
+      </div>
+
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media reveal" data-reveal>
+          <div class="about-media-frame">
+            <img src="assets/img/bigotacos-puesto.jpeg" alt="Puesto de Bigotacos sobre la calle, con toldo rojo y mesas listas para los comensales" loading="lazy">
+          </div>
+          <div class="about-media-badge">
+            <span class="badge-number">6</span>
+            <span class="badge-label">Guisados distintos<br>para armar tu taco</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal" data-reveal>Sobre Bigotacos</p>
+          <h2 class="section-title reveal" data-reveal>Comida callejera <span class="text-accent">hecha con orgullo.</span></h2>
+          <p class="section-desc reveal" data-reveal>
+            Bigotacos nació para ofrecer una experiencia culinaria memorable y accesible a los amantes de la comida mexicana. Nos enfocamos en la frescura de nuestros ingredientes y en darle un toque especial a cada plato, con una diversidad de guisados que van desde el clásico suadero hasta el chorizo argentino, siempre a precios competitivos. Nuestro puesto, visible y de fácil acceso, recibe cada día a vecinos y a quienes simplemente van de paso — porque el sabor con bigote se disfruta mejor en compañía.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v6.17a3 3 0 0 1 1.83 1.83H21a1 1 0 1 1 0 2h-6.17A3 3 0 0 1 13 14.83V21a1 1 0 1 1-2 0v-6.17A3 3 0 0 1 9.17 13H3a1 1 0 1 1 0-2h6.17A3 3 0 0 1 11 9.17V3a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <div>
+                <h3>Ingredientes frescos</h3>
+                <p>Preparamos cada guisado con ingredientes frescos, cuidando el sabor desde la primera hora del día.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.5 4.5-7 8.6-7 12.5A7 7 0 0 0 12 22a7 7 0 0 0 7-7.5c0-3.9-3.5-8-7-12.5Zm0 17a4.5 4.5 0 0 1-4.5-4.6c.05-1.15.55-2.1 1.5-3.4-.2 2.3.9 4.1 3 4.5a.5.5 0 0 1-.15.98A4.9 4.9 0 0 1 8.5 14.9c0 .05 0 .1 0 .15A3.5 3.5 0 0 0 12 18.5a1 1 0 0 1 0 .5Z"/></svg>
+              </div>
+              <div>
+                <h3>Sabor 100% mexicano</h3>
+                <p>Suadero, longaniza, arrachera, chorizo argentino, alambre y carne enchilada — un menú pensado para el auténtico antojo.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a1 1 0 0 1 1 1v1.06A8 8 0 0 1 20 11v1a1 1 0 1 1-2 0v-1a6 6 0 1 0-12 0v1a1 1 0 1 1-2 0v-1a8 8 0 0 1 7-7.94V2a1 1 0 0 1 1-1Zm-6 15h12a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1a2 2 0 0 1 2-2Z"/></svg>
+              </div>
+              <div>
+                <h3>Mucho sabor, poco precio</h3>
+                <p>Tacos a $20 y burritos a $40, precios pensados para que puedas volver todos los días.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENÚ ============ -->
+    <section class="services" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Nuestro Menú</p>
+          <h2 class="section-title reveal" data-reveal>Tacos y burritos <span class="text-accent">que sí llenan.</span></h2>
+          <p class="section-desc reveal" data-reveal>Mucho sabor, poco precio — nuestra promesa desde el primer taco.</p>
+        </div>
+
+        <!-- Categoría 1: Tacos -->
+        <div class="service-category reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=1200&q=80" alt="Tacos mexicanos recién preparados sobre tortillas de maíz, similares a los de Bigotacos" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>01 — Tacos</span>
+            <h3>Tacos a $20</h3>
+            <p class="service-cat-desc">Elige tu guisado favorito, servido en tortilla recién hecha con cebolla, cilantro y nuestras salsas de la casa.</p>
+            <ul class="service-list">
+              <li>Suadero <strong>$20</strong></li>
+              <li>Longaniza <strong>$20</strong></li>
+              <li>Arrachera <strong>$20</strong></li>
+              <li>Chorizo argentino <strong>$20</strong></li>
+              <li>Alambre <strong>$20</strong></li>
+              <li>Carne enchilada <strong>$20</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Categoría 2: Burritos -->
+        <div class="service-category service-category--reverse reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1200&q=80" alt="Burrito grande envuelto, listo para llevar, similar a los burritos de Bigotacos" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>02 — Burritos</span>
+            <h3>Burritos a $40</h3>
+            <p class="service-cat-desc">Grandes, bien rellenos y fáciles de llevar — ideales para el desayuno o el almuerzo sobre la marcha.</p>
+            <ul class="service-list">
+              <li>Arma tu burrito con el guisado que prefieras <strong>$40</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta reveal" data-reveal>
+          <p>¿Quieres tu pedido para llevar? Escríbenos y te lo preparamos al momento.</p>
+          <a href="https://wa.me/525612657484?text=Hola%20Bigotacos%2C%20quiero%20pedir%20para%20llevar" target="_blank" rel="noopener" class="btn btn-primary">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 1 ============ -->
+    <section class="parallax-banner" style="background-image:url('https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1920&q=80');">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>El sabor con bigote</p>
+        <h2 class="reveal" data-reveal>Ingredientes frescos, todos los días.</h2>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ BIGOTACOS ============ -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Por qué Bigotacos?</p>
+          <h2 class="section-title reveal" data-reveal>El antojo que <span class="text-accent">no falla.</span></h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a1 1 0 0 1 1 1v6.17a3 3 0 0 1 1.83 1.83H21a1 1 0 1 1 0 2h-6.17A3 3 0 0 1 13 14.83V21a1 1 0 1 1-2 0v-6.17A3 3 0 0 1 9.17 13H3a1 1 0 1 1 0-2h6.17A3 3 0 0 1 11 9.17V3a1 1 0 0 1 1-1Z"/></svg>
+            </div>
+            <h3>Ingredientes frescos</h3>
+            <p>Cuidamos la frescura de cada ingrediente para que cada taco tenga siempre el mismo gran sabor.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.5 4.5-7 8.6-7 12.5A7 7 0 0 0 12 22a7 7 0 0 0 7-7.5c0-3.9-3.5-8-7-12.5Z"/></svg>
+            </div>
+            <h3>Sabor auténtico</h3>
+            <p>Suadero, longaniza, arrachera y más — recetas con todo el sabor de la comida callejera mexicana.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a1 1 0 0 1 1 1v1.06A8 8 0 0 1 20 11v1a1 1 0 1 1-2 0v-1a6 6 0 1 0-12 0v1a1 1 0 1 1-2 0v-1a8 8 0 0 1 7-7.94V2a1 1 0 0 1 1-1Zm-6 15h12a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1a2 2 0 0 1 2-2Z"/></svg>
+            </div>
+            <h3>Precios accesibles</h3>
+            <p>Tacos a $20 y burritos a $40, para que el buen sabor no le pegue a tu bolsillo.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            </div>
+            <h3>Ubicación accesible</h3>
+            <p>Un puesto visible y de fácil acceso, ideal para clientes locales y para quienes van de paso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 2 ============ -->
+    <section class="parallax-banner" style="background-image:url('https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=1920&q=80');">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Desayunos y almuerzos</p>
+        <h2 class="reveal" data-reveal>De 7 AM a 3 PM, lunes a sábado.</h2>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Galería</p>
+          <h2 class="section-title reveal" data-reveal>Un vistazo a <span class="text-accent">Bigotacos</span></h2>
+          <p class="section-desc reveal" data-reveal>Nuestro puesto, nuestro menú y el sabor que nos representa.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/bigotacos-menu.jpeg" alt="Menú de precios de Bigotacos: tacos a $20 y burritos a $40" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/bigotacos-puesto.jpeg" alt="Nuestro puesto de tacos, listo para atender a los comensales" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=80" alt="Tacos servidos con cilantro, cebolla y limón, al estilo callejero" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=80" alt="Tacos recién preparados con un toque de salsa cremosa" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=900&q=80" alt="Tacos de carne deshebrada con cilantro y cebolla" loading="lazy">
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="https://images.unsplash.com/photo-1584208632869-05fa2b2a5934?auto=format&fit=crop&w=900&q=80" alt="Guisados servidos en cazuelas de barro, listos para preparar los tacos" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-reveal>Pedidos y horario</p>
+          <h2 class="section-title reveal" data-reveal>Ordena tu <span class="text-accent">antojo hoy mismo</span></h2>
+          <p class="section-desc reveal" data-reveal>Escríbenos por WhatsApp para hacer tu pedido o simplemente visítanos en nuestro puesto — te esperamos con gusto.</p>
+
+          <ul class="contact-list reveal" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.7 2 6V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6l-10 6.7ZM4 4h16a2 2 0 0 1 2 2L12 13 2 6a2 2 0 0 1 2-2Z"/></svg>
+              <span><strong>Horario</strong>Lunes a sábado, de 7 AM a 3 PM</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+              <span><strong>Pedidos</strong><a href="https://wa.me/525612657484" target="_blank" rel="noopener">56 1265 7484 (WhatsApp)</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              <span><strong>Ubicación</strong>Puesto callejero visible y de fácil acceso — pregunta por Bigotacos en la zona</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-highlight reveal" data-reveal>
+          <div class="contact-highlight-inner">
+            <span class="contact-highlight-badge">Mucho sabor, poco precio</span>
+            <h3>¿Se te antojó un taco?</h3>
+            <p>Manda tu pedido por WhatsApp y te lo preparamos al momento, listo para recoger.</p>
+            <a href="https://wa.me/525612657484?text=Hola%20Bigotacos%2C%20me%20gustar%C3%ADa%20hacer%20un%20pedido" target="_blank" rel="noopener" class="btn btn-primary">Ordena por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo.svg" alt="Bigotacos" class="brand-logo">
+          <span class="brand-text">
+            <span class="brand-name">Bigotacos</span>
+            <span class="brand-tagline">El sabor con bigote</span>
+          </span>
+        </a>
+        <p>Tacos y burritos con ingredientes frescos y mucho sabor, a precios que no pegan en el bolsillo.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pedidos</h4>
+        <ul>
+          <li>Lunes a sábado<br>7 AM – 3 PM</li>
+          <li><a href="https://wa.me/525612657484" target="_blank" rel="noopener">56 1265 7484 (WhatsApp)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Bigotacos — El sabor con bigote. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="https://wa.me/525612657484?text=Hola%20Bigotacos%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
