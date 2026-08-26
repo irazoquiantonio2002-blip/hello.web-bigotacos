@@ -273,6 +273,13 @@ p{ margin:0; }
 .feature-card h3{ font-size:1.1rem; margin-bottom:.55rem; }
 .feature-card p{ font-size:.92rem; color: var(--text-dark-muted); line-height:1.6; }
 
+/* =========================== NUESTRO NEGOCIO =========================== */
+.business{ padding: 7rem 0; background: var(--color-cream); }
+.business-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.business-item{ border-radius: var(--radius-md); overflow:hidden; aspect-ratio: 4/5; box-shadow: var(--shadow-soft); }
+.business-item img{ width:100%; height:100%; object-fit:cover; transition: transform .55s var(--ease); }
+.business-item:hover img{ transform: scale(1.08); }
+
 /* =========================== GALLERY =========================== */
 .gallery{ padding: 7rem 0; background: var(--color-bg); color: var(--text-light); }
 .gallery .section-desc{ color: var(--text-light-muted); }
@@ -354,6 +361,7 @@ p{ margin:0; }
   .nav-toggle{ display:flex; }
   .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
   .gallery-item:nth-child(1), .gallery-item:nth-child(4){ grid-row:auto; aspect-ratio:1/1; }
+  .business-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px){
@@ -363,4 +371,5 @@ p{ margin:0; }
   .services-cta{ flex-direction:column; align-items:flex-start; }
   .about-media-badge{ right: 0; bottom:-1.2rem; }
   .gallery-grid{ grid-template-columns: 1fr 1fr; }
+  .business-grid{ grid-template-columns: 1fr; }
 }
